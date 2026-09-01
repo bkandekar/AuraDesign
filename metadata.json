@@ -1,0 +1,6 @@
+{
+  "name": "Webora",
+  "description": "We build websites that move businesses forward. High-quality, fast, modern, and conversion-focused digital agency website.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

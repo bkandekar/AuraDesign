@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Cost Calculator &bull; Webora Digital Agency</title>
+  <meta name="description" content="Calculate the investment cost of your new website instantly. Custom options for landing pages, business websites, e-commerce, SEO, and maintenance.">
+  <link rel="canonical" href="https://yourdomain.com/calculator.html">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-container" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="Webora Home">
+          <svg class="brand-icon" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="#09090B"/>
+            <path d="M7 10L11.5 22L16 13L20.5 22L25 10" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="16" cy="7.5" r="2" fill="#2563EB"/>
+          </svg>
+          <span>WEBORA</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="portfolio.html" class="nav-link">Work</a>
+          <a href="index.html#process" class="nav-link">Process</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="calculator.html" class="nav-link active">Calculator</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="about.html" class="nav-link">About</a>
+        </div>
+
+        <div class="nav-actions">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+          <a href="contact.html" class="btn btn-primary btn-sm">Let's Talk &rarr;</a>
+          <button id="mobile-toggle" class="mobile-toggle" aria-label="Open Navigation Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <div class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="portfolio.html" class="mobile-nav-link">Work</a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="calculator.html" class="mobile-nav-link active">Cost Calculator</a>
+      <a href="blog.html" class="mobile-nav-link">Blog &amp; Insights</a>
+      <a href="about.html" class="mobile-nav-link">About Webora</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <section class="hero" style="padding-bottom: 2.5rem;">
+      <div class="hero-bg-grid"></div>
+      <div class="container">
+        <div class="hero-content reveal">
+          <span class="tagline">SaaS-Grade Transparency</span>
+          <h1 class="hero-title">
+            Interactive Website <br>
+            <span class="gradient-text">Cost Estimator</span>
+          </h1>
+          <p class="hero-subtitle">
+            Configure your project parameters below to see an instant price estimate and itemized scope breakdown.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+        <div class="calculator-box reveal" id="website-cost-calculator">
+          <!-- Step 1: Website Type -->
+          <div class="calc-step-group">
+            <div class="calc-step-title"><span>01</span> Project Architecture</div>
+            <div class="calc-grid-options">
+              <label class="calc-option-card selected">
+                <input type="radio" name="calc_type" value="landing">
+                <span class="calc-opt-name">Landing Page</span>
+                <span class="calc-opt-desc">Single high-converting page for marketing campaigns</span>
+              </label>
+              <label class="calc-option-card">
+                <input type="radio" name="calc_type" value="business" checked>
+                <span class="calc-opt-name">Business Website</span>
+                <span class="calc-opt-desc">Corporate brand website with services &amp; case studies</span>
+              </label>
+              <label class="calc-option-card">
+                <input type="radio" name="calc_type" value="ecommerce">
+                <span class="calc-opt-name">E-Commerce Store</span>
+                <span class="calc-opt-desc">Online store with payment gateway &amp; catalog</span>
+              </label>
+              <label class="calc-option-card">
+                <input type="radio" name="calc_type" value="custom">
+                <span class="calc-opt-name">Custom Web Application</span>
+                <span class="calc-opt-desc">Bespoke SaaS platform or booking portal</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 2: Page Scale -->
+          <div class="calc-step-group">
+            <div class="calc-step-title"><span>02</span> Page Scale &amp; Content Depth</div>
+            <div class="calc-grid-options">
+              <label class="calc-option-card">
+                <input type="radio" name="calc_pages" value="1-3">
+                <span class="calc-opt-name">1–3 Pages</span>
+                <span class="calc-opt-desc">Essential core footprint</span>
+              </label>
+              <label class="calc-option-card selected">
+                <input type="radio" name="calc_pages" value="4-7" checked>
+                <span class="calc-opt-name">4–7 Pages</span>
+                <span class="calc-opt-desc">Comprehensive business standard</span>
+              </label>
+              <label class="calc-option-card">
+                <input type="radio" name="calc_pages" value="8-15">
+                <span class="calc-opt-name">8–15 Pages</span>
+                <span class="calc-opt-desc">Deep product &amp; service architecture</span>
+              </label>
+              <label class="calc-option-card">
+                <input type="radio" name="calc_pages" value="15+">
+                <span class="calc-opt-name">15+ Pages</span>
+                <span class="calc-opt-desc">Enterprise content portal</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 3: Required Features & Add-ons -->
+          <div class="calc-step-group">
+            <div class="calc-step-title"><span>03</span> Required Features &amp; Integrations</div>
+            <div class="calc-grid-options">
+              <label class="calc-option-card">
+                <input type="checkbox" name="calc_features" value="seo" checked>
+                <span class="calc-opt-name">SEO Foundations &amp; Schema</span>
+                <span class="calc-opt-desc">Metadata, robots, sitemap, Google search console</span>
+              </label>
+              <label class="calc-option-card">
+                <input type="checkbox" name="calc_features" value="blog" checked>
+                <span class="calc-opt-name">Blog / Article Repository</span>
+                <span class="calc-opt-desc">Searchable editorial hub with category filters</span>
+              </label>
+              <label class="calc-option-card">
+                <input type="checkbox" name="calc_features" value="whatsapp" checked>
+                <span class="calc-opt-name">Direct WhatsApp Lead Flow</span>
+                <span class="calc-opt-desc">Click-to-chat with auto-formatted inquiries</span>
+              </label>
+              <label class="calc-option-card">
+                <input type="checkbox" name="calc_features" value="payments">
+                <span class="calc-opt-name">Payment Gateway Integration</span>
+                <span class="calc-opt-desc">UPI, Cards, Razorpay or Stripe checkout</span>
+              </label>
+              <label class="calc-option-card">
+                <input type="checkbox" name="calc_features" value="booking">
+                <span class="calc-opt-name">Appointment / Booking Flow</span>
+                <span class="calc-opt-desc">Calendar sync &amp; consultation bookings</span>
+              </label>
+              <label class="calc-option-card">
+                <input type="checkbox" name="calc_features" value="maintenance">
+                <span class="calc-opt-name">Annual Care &amp; Maintenance</span>
+                <span class="calc-opt-desc">Proactive updates, uptime monitoring &amp; backups</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 4: Timeline Priority -->
+          <div class="calc-step-group">
+            <div class="calc-step-title"><span>04</span> Timeline Urgency</div>
+            <div class="calc-grid-options">
+              <label class="calc-option-card selected">
+                <input type="radio" name="calc_timeline" value="standard" checked>
+                <span class="calc-opt-name">Standard Sprint</span>
+                <span class="calc-opt-desc">2–3 Weeks structured delivery</span>
+              </label>
+              <label class="calc-option-card">
+                <input type="radio" name="calc_timeline" value="urgent">
+                <span class="calc-opt-name">Express Fast-Track</span>
+                <span class="calc-opt-desc">5–7 Day priority delivery (+25%)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Live Summary & WhatsApp CTA -->
+          <div class="calc-summary-panel">
+            <div class="calc-total-wrap">
+              <span class="calc-total-label">Estimated Investment</span>
+              <div class="calc-total-value" id="calc-total-display">&#8377;17,000</div>
+            </div>
+            <div id="calc-summary-items" style="max-width: 380px;"></div>
+            <a href="#" id="calc-whatsapp-cta" class="btn btn-blue btn-lg">
+              Send Scope on WhatsApp &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="color: #FFFFFF;">
+            <svg class="brand-icon" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="8" fill="#18181B"/>
+              <path d="M7 10L11.5 22L16 13L20.5 22L25 10" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="16" cy="7.5" r="2" fill="#2563EB"/>
+            </svg>
+            <span>WEBORA</span>
+          </a>
+          <p>We build high-performance websites that move businesses forward.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <div class="footer-links">
+            <a href="services/website-design.html">Website Design</a>
+            <a href="services/website-development.html">Website Development</a>
+            <a href="services/business-websites.html">Business Websites</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Webora Digital Agency. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/calculator.js"></script>
+</body>
+</html>

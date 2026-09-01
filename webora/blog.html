@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog &amp; Insights &bull; Webora Digital Agency</title>
+  <meta name="description" content="Actionable guides and essays on conversion design, web performance, Core Web Vitals, organic SEO, and modern digital branding.">
+  <link rel="canonical" href="https://yourdomain.com/blog.html">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-container" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="Webora Home">
+          <svg class="brand-icon" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="#09090B"/>
+            <path d="M7 10L11.5 22L16 13L20.5 22L25 10" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="16" cy="7.5" r="2" fill="#2563EB"/>
+          </svg>
+          <span>WEBORA</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="portfolio.html" class="nav-link">Work</a>
+          <a href="index.html#process" class="nav-link">Process</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="calculator.html" class="nav-link">Calculator</a>
+          <a href="blog.html" class="nav-link active">Blog</a>
+          <a href="about.html" class="nav-link">About</a>
+        </div>
+
+        <div class="nav-actions">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+          <a href="contact.html" class="btn btn-primary btn-sm">Let's Talk &rarr;</a>
+          <button id="mobile-toggle" class="mobile-toggle" aria-label="Open Navigation Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <div class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="portfolio.html" class="mobile-nav-link">Work</a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="calculator.html" class="mobile-nav-link">Cost Calculator</a>
+      <a href="blog.html" class="mobile-nav-link active">Blog &amp; Insights</a>
+      <a href="about.html" class="mobile-nav-link">About Webora</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="hero" style="padding-bottom: 2rem;">
+      <div class="hero-bg-grid"></div>
+      <div class="container">
+        <div class="hero-content reveal">
+          <span class="tagline">Editorial Intelligence</span>
+          <h1 class="hero-title">
+            Essays on design, speed, and <br>
+            <span class="gradient-text">conversion engineering.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Field notes and practical blueprints from building high-converting websites for high-growth companies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+        <div class="blog-controls reveal">
+          <div class="blog-search-wrap">
+            <input type="search" id="blog-search-input" class="blog-search-input" placeholder="Search essays by topic, speed, SEO, design..." aria-label="Search articles">
+          </div>
+          <div class="filter-tabs" id="blog-category-tabs" style="margin-bottom: 0;">
+            <button class="filter-btn active" data-category="all">All Articles</button>
+            <button class="filter-btn" data-category="design">Design &amp; UI</button>
+            <button class="filter-btn" data-category="speed">Speed &amp; Code</button>
+            <button class="filter-btn" data-category="conversion">Conversion</button>
+            <button class="filter-btn" data-category="seo">SEO</button>
+          </div>
+        </div>
+
+        <!-- Articles Grid -->
+        <div class="blog-grid" id="blog-posts-grid">
+          <!-- Article 1 -->
+          <article class="blog-card reveal" data-category="speed" data-title="why fast websites win speed performance core web vitals revenue">
+            <span class="blog-category">Speed &amp; Performance</span>
+            <h2 class="blog-card-title">
+              <a href="blog/why-fast-websites-win.html">Why Fast Websites Win: The Unforgiving Economics of Sub-Second Page Loads</a>
+            </h2>
+            <p class="blog-excerpt">
+              Every 100ms delay in mobile load time costs up to 7% in conversions. Learn why lightweight semantic code beats bloated builders every time.
+            </p>
+            <div class="blog-meta">
+              <span>May 12, 2026</span> &bull; <span>5 min read</span>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="blog-card reveal" data-category="conversion" data-title="anatomy high converting landing page copy hierarchy call to action">
+            <span class="blog-category">Conversion Strategy</span>
+            <h2 class="blog-card-title">
+              <a href="blog/anatomy-high-converting-landing-page.html">The Anatomy of a High-Converting Landing Page in 2026</a>
+            </h2>
+            <p class="blog-excerpt">
+              A teardown of the 7 essential layout blocks required to convert cold traffic into qualified inbound inquiries with zero friction.
+            </p>
+            <div class="blog-meta">
+              <span>Apr 28, 2026</span> &bull; <span>7 min read</span>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="blog-card reveal" data-category="design" data-title="editorial typography whitespace minimalism linear apple design">
+            <span class="blog-category">Design &amp; Craft</span>
+            <h2 class="blog-card-title">
+              <a href="blog/editorial-typography-design.html">Editorial Typography: How Space and Type Establish Immediate Brand Prestige</a>
+            </h2>
+            <p class="blog-excerpt">
+              Why high-end brands invest in typographic discipline and generous negative space over loud neon gradients and cluttered components.
+            </p>
+            <div class="blog-meta">
+              <span>Apr 15, 2026</span> &bull; <span>6 min read</span>
+            </div>
+          </article>
+
+          <!-- Article 4 -->
+          <article class="blog-card reveal" data-category="seo" data-title="technical seo schema structured data rankings google indexing">
+            <span class="blog-category">Organic SEO</span>
+            <h2 class="blog-card-title">
+              <a href="blog/technical-seo-foundations.html">Technical SEO Checklist: What Developers Miss in Modern Semantic Markup</a>
+            </h2>
+            <p class="blog-excerpt">
+              Beyond meta keywords: how Schema.org JSON-LD, crawl efficiency, and clean DOM trees drive compound organic traffic.
+            </p>
+            <div class="blog-meta">
+              <span>Mar 29, 2026</span> &bull; <span>8 min read</span>
+            </div>
+          </article>
+
+          <!-- Article 5 -->
+          <article class="blog-card reveal" data-category="conversion" data-title="website redesign signs when time revamp legacy corporate website">
+            <span class="blog-category">Strategy</span>
+            <h2 class="blog-card-title">
+              <a href="blog/signs-your-website-needs-redesign.html">5 Urgent Signs Your Website Is Quietly Repelling Potential Clients</a>
+            </h2>
+            <p class="blog-excerpt">
+              High bounce rates, poor mobile ergonomics, and dated aesthetics: how to audit your site for subtle credibility leaks.
+            </p>
+            <div class="blog-meta">
+              <span>Mar 14, 2026</span> &bull; <span>4 min read</span>
+            </div>
+          </article>
+
+          <!-- Article 6 -->
+          <article class="blog-card reveal" data-category="speed design" data-title="vanilla javascript no framework vs heavy react bundle cost">
+            <span class="blog-category">Engineering</span>
+            <h2 class="blog-card-title">
+              <a href="blog/the-vanilla-web-advantage.html">The Vanilla Web Advantage: Why We Build Agency Sites Without Heavy Bundles</a>
+            </h2>
+            <p class="blog-excerpt">
+              Why pure semantic HTML and Vanilla JavaScript offer unbeatable longevity, instant deployment on GitHub Pages, and zero maintenance overhead.
+            </p>
+            <div class="blog-meta">
+              <span>Feb 27, 2026</span> &bull; <span>6 min read</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="color: #FFFFFF;">
+            <svg class="brand-icon" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="8" fill="#18181B"/>
+              <path d="M7 10L11.5 22L16 13L20.5 22L25 10" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="16" cy="7.5" r="2" fill="#2563EB"/>
+            </svg>
+            <span>WEBORA</span>
+          </a>
+          <p>We build high-performance websites that move businesses forward.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <div class="footer-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+            <a href="refund-policy.html">Refund Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Webora Digital Agency. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>
